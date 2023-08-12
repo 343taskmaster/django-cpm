@@ -6,7 +6,10 @@ urlpatterns = [
     path('', include('website.urls')), 
 ]
 
+<<<<<<< HEAD
 #commit1 
 #commit5
 
 
+=======
+>>>>>>> parent of fdd010a (commit1)
