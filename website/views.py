@@ -18,10 +18,10 @@ def home(request):
             messages.success(request, "There was an error logging in ")
             return redirect('home')
     else:   
-        return render(request, 'home.html',{})
+        return render(request, 'home.html',{})  #this part is where you get routed on the home page 
 
-def login_user(request):
-    pass
 
 def logout_user(request):
-    pass
+    logout(request)
+    messages.success(request, "You have been logged out")
+    return redirect('home')
