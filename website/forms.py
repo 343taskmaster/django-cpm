@@ -4,9 +4,9 @@ from django import forms
 
 
 class SignUpForm(UserCreationForm):
-    email = forms.EmailField(Label="", widget=forms.TextInput(attrs={'class':'form-control','placeholder':'Email Address '}))
-    first_name = forms.CharField(Label="", max_length="30", widget=forms.TextInput(attrs={'class':'form-control','placeholder':'First Name '}))
-    last_name = forms.CharField(Label="", max_length="30", widget=forms.TextInput(attrs={'class':'form-control','placeholder':';Last Name '}))
+    email = forms.EmailField(label="", widget=forms.TextInput(attrs={'class':'form-control','placeholder':'Email Address '}))
+    first_name = forms.CharField(label="", max_length="30", widget=forms.TextInput(attrs={'class':'form-control','placeholder':'First Name '}))
+    last_name = forms.CharField(label="", max_length="30", widget=forms.TextInput(attrs={'class':'form-control','placeholder':'Last Name '}))
 
 class Meta: 
     model = User
